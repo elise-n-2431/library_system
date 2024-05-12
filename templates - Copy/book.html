@@ -1,0 +1,30 @@
+{%extends "index.html" %}
+{% block content %}
+{% if results[4]==0 %}
+    <div class="w3-quarter">
+        <img src="/static/images/{{results[0]}}.jpg" alt="{{ results[1] }}" style="border-radius:3px;">
+        <form action="/login" method="POST">
+            <input type="radio" name="number" value={{id}} checked="checked" style="height:0.1px; width:0.1px; visibility:hidden;">
+            <input type="radio" name="book" value={{results[1]}} checked="checked" style="height:0.1px; width:0.1px; visibility:hidden;"><br>
+            <input placeholder="Student ID" name="username"autocomplete="off">
+            <input placeholder="Password" type="password" name="password">
+            <button type=submit style="border-color:black;">Issue</button>
+        </form>
+        
+    </div>
+    <div class="w3-3quarter">
+        <h1>{{results[1]}}</h1>
+        <p>{{results[5]}}</p>
+    </div>
+{% else %}
+    <div class="w3-quarter">
+        <img src="/static/images/{{results[0]}}.jpg" alt="{{ results[1] }}" style="border-radius:3px;">
+        <button type=button style="border-color: red;">Sorry, this book is unavaliable</button>
+    </div>
+    <div class="w3-3quarter">
+        <h1>{{results[1]}}</h1>
+        <p>{{results[5]}}</p>
+    </div>
+{% endif %}
+<p>{{id}}here{{results[1]}}</p>
+{% endblock %}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/looks.css') }}">
+</head>
+<body>
+    <h1>LIBRARY</h1>
+
+    <nav>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/catalogue">CATALOGUE</a></li>
+            <form action="/action_page.php" target="_self" method="GET" autocomplete="off">
+                <li><input type="submit" style="float:right; width:7vw; text-align:center;"></li>
+                <li><input type="text" id="search" name="search" type="text" placeholder="SEARCH"></li>
+            </form>
+        </ul>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>

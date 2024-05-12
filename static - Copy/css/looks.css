@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0em;
+    background-color:white;
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+
+  /** Head Area **/
+  header {
+    margin: 2em;
+    padding: 0em;
+    background-color: rgba(255, 255, 255, 0.24);
+    box-shadow: 0 1px 1em rgba(0,0,0,0.8);
+  }
+  
+  /* Header Navigation */
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #262626;
+    margin:0 0 0 0;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    float:left;
+  }
+
+  li input {
+    display: block;
+    text-align: left;
+    width:25vw;
+    height:35px;
+    padding:5px;
+    text-decoration: none;
+    float:right;
+    margin:8.5px 10px 8.5px 0;
+    color:black;
+    background-color:white;
+    border-color: rgba(255, 255, 255, 0.24);
+    border-radius:2.5px;
+  }
+
+  li button{
+    width: 55px;
+    height: 30px;
+    margin:12.25px 10px 12.25px 0;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: black;
+  }
+  
+  /** Main Content Area **/
+  main {
+    margin:0em;
+    padding: 0em;
+    background-color: rgba(255, 255, 255, 0.24);
+    box-shadow: 0 0 0em rgba(0,0,0,0.8);
+    border-radius: 0em;
+  }
+  
+  p {
+    padding: 0em 2em;
+    font-size:1em;
+  }
+
+  h1 {
+    margin: 0;
+    padding: 0.75em 1em;
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+
+  table {
+    width: 100%;
+  }
+  
+  th {
+    text-align: left;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #eee;
+  }
+  
+  table img {
+    height:15em;
+  }
+
+  div.w3-quarter{
+    padding:1em;
+  }
+
+  button{
+    border-radius:3px;
+    background-color:white;
+    width:100%; 
+    height:30px; 
+    margin:20px 0;
+  }
+
+  img{
+    height:32vw;
+    width:100%;
+    object-fit:fill;
+    border-radius:3px;
+  }
+
+
+@media screen and (max-width: 600px) {
+  img{
+    height:100%;
+    width:100%;
+  }
+  h1{
+    text-align: center;
+    padding: 30px 10px 0px 10px;
+  }
+  ul{
+    padding:0;
+    margin:15px 0 0 0;
+  }
+  li a {
+    display: block;
+    width:100%;
+    padding:10px;
+  }
+
+  li input {
+    height:35px;
+    padding:3px;
+    margin:1vw;
+    width:87vw;
+    float:left;
+  }
+}

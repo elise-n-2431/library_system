@@ -1,0 +1,16 @@
+{%extends "index.html" %}
+{% block content %}
+{% for i in results %}
+    <div class="w3-quarter">
+        {% if i[4]==0 %}
+            <a href="/book/{{i[0]}}">
+                <img src="/static/images/{{ i[0] }}.jpg" alt="{{ i[1] }}"style="border:solid green">
+            </a>
+        {% else %}
+            <a href="/book/{{i[0]}}">
+                <img src="/static/images/{{ i[0] }}.jpg" alt="{{ i[1] }}"style="border:solid red">
+            </a>
+        {% endif %}
+    </div>
+{% endfor %}
+{% endblock %}
